@@ -4,7 +4,7 @@ import datetime
 import time
 
 OUTPUT_PATH = Path(_file_).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\Atlast\Downloads\test1213\build2\build\assets\frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"image_1.png")
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
