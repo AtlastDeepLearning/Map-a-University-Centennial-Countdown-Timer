@@ -83,7 +83,7 @@ hour_text = canvas.create_text(
     anchor="nw",
     text="",
     fill="#FFB81D",
-    font=("MontserratRoman Medium", 256 * -1)
+    font=("Outfit Bold", 256 * -1)
 )
 
 minute_text = canvas.create_text(
@@ -92,7 +92,7 @@ minute_text = canvas.create_text(
     anchor="nw",
     text="",
     fill="#FFB81D",
-    font=("MontserratRoman Medium", 256 * -1)
+    font=("Outfit Bold", 256 * -1)
 )
 
 second_text = canvas.create_text(
@@ -101,7 +101,7 @@ second_text = canvas.create_text(
     anchor="nw",
     text="",
     fill="#FFB81D",
-    font=("MontserratRoman Medium", 256 * -1)
+    font=("Outfit Bold", 256 * -1)
 )
 
 # Set up the initial countdown values
