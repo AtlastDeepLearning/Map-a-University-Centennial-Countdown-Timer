@@ -3,8 +3,8 @@ from tkinter import Tk, Canvas, PhotoImage
 import datetime
 import time
 
-OUTPUT_PATH = Path(_file_).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"image_1.png")
+OUTPUT_PATH = Path(__file__).parent
+ASSETS_PATH = OUTPUT_PATH / "assets"
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
@@ -59,14 +59,9 @@ canvas = Canvas(
 )
 
 canvas.place(x=0, y=0)
-image_image_1 = PhotoImage(
-    file=relative_to_assets("image_1.png"))
-image_1 = canvas.create_image(
-    960.0,
-    540.0,
-    image=image_image_1
-)
-
+image_1_path = relative_to_assets("image_1.png")
+image_1 = PhotoImage(file=image_1_path)
+image_1_obj = canvas.create_image(960.0, 540.0, image=image_1)
 
 day_text = canvas.create_text(
     413.0,
@@ -74,7 +69,7 @@ day_text = canvas.create_text(
     anchor="nw",
     text="",
     fill="#D9291C",
-    font=("MontserratRoman Medium", 140 * -1)
+    font=("Outfit Bold", 140 * -1)
 )
 
 hour_text = canvas.create_text(
