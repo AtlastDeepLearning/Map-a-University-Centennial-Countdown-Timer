@@ -105,9 +105,9 @@ canvas = Canvas(
 )
 
 canvas.place(x=0, y=0)
-image_1_path = relative_to_assets("image_2.png")
-image_1 = PhotoImage(file=image_1_path)
-image_1_obj = canvas.create_image(canvas_width / 2, canvas_height / 2, image=image_1)
+image_2_path = relative_to_assets("image_2.png")
+image_2 = PhotoImage(file=image_2_path)
+image_2_obj = canvas.create_image(canvas_width / 2, canvas_height / 2, image=image_2)
 
 day_text = canvas.create_text(
     canvas_width * 0.22,
